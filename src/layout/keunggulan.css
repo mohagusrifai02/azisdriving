@@ -1,0 +1,104 @@
+.container_keunggulan{
+    width: 100%;
+    display: flex;
+    padding: 20px;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(224, 222, 222);
+}
+.container_keunggulan .cards-layanan{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-bottom: 40px;
+}
+.container_keunggulan .cards-layanan .title{
+    flex-basis: 50%;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+    margin-top: 50px;
+}
+.container_keunggulan .cards-layanan .title h1{
+    font-weight: 500;
+}
+.container_keunggulan .cards-layanan .title h2{
+    font-weight: 400;
+}
+.container_keunggulan .cards-layanan ul{
+    flex-basis: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    /* width: 100%; */
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+.container_keunggulan .cards-layanan ul li{
+    flex: 1 1 250px; /* ✅ fleksibel, minimal 250px */
+    max-width: 300px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 10px;
+    background-color: #f0f0f0;
+}
+.container_keunggulan .cards-layanan ul li:hover{
+    background-color: #2CA89A;
+    color: #f0f0f0;
+}
+.container_keunggulan .cards-layanan ul li .ikon{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+.container_keunggulan .cards-layanan ul li .ikon i{
+    font-size: 50px;
+}
+.container_keunggulan .cards-layanan ul li .ikon h3{
+    /* height: 20%; */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container_keunggulan .cards-layanan ul li p{
+    /* height: 20%; */
+    font-weight: 600;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width:600px){
+    .container_keunggulan .cards-layanan ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container_keunggulan {
+        padding: 10px;
+    }
+    .container_keunggulan .cards-layanan{
+        margin-bottom: 60px;
+    }
+
+    .container_keunggulan .cards-layanan .title{
+        text-align: center;
+    }
+    
+    .container_keunggulan .cards-layanan ul li {
+        width: 100%;
+        max-width: 90%;
+    }
+
+}

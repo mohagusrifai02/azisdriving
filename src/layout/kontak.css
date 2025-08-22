@@ -1,0 +1,83 @@
+.container_kontak{
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+    background: #213547;
+}
+.container_kontak h1{
+    height: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #f0f0f0;
+}
+.container_kontak .informasi_kontak{
+    height: 70%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    margin-bottom: 10px;
+    color: #f0f0f0;
+}
+.container_kontak .informasi_kontak .kontak, .container_kontak .informasi_kontak .maps{
+    height: 100%;
+    width: 50%;
+}
+.container_kontak .informasi_kontak .kontak{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.container_kontak .informasi_kontak .kontak h2{
+    flex-basis: 20%;
+}
+.container_kontak .informasi_kontak .kontak .ikon{
+    flex-basis: 80%;
+    line-height: 3;
+    color: #f0f0f0;
+}
+.container_kontak .footer{
+    height: 5%;
+    width: 100%;
+    font-size: 12px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 200;
+    background-color: #213547;
+    color: #f0f0f093;
+}
+
+.lokasi{
+    color: #4285F4;
+}
+
+@media screen and (max-width:600px){
+.container_kontak{
+    height: 150vh;
+}
+ .container_kontak h1{
+    font-size: 20px;
+    height: 20%;
+ }
+ .container_kontak .informasi_kontak{
+    flex-direction: column;
+    height: 80%;
+ }
+ .container_kontak .informasi_kontak .kontak, .container_kontak .informasi_kontak .maps{
+    height: 50%;
+    width: 100%;
+}
+.container_kontak .informasi_kontak .kontak{
+    align-items: flex-start;
+}
+.container_kontak .informasi_kontak .kontak .ikon{
+    line-height: 3;
+}   
+}

@@ -1,0 +1,119 @@
+.slider-container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  margin: auto;
+  overflow: hidden;
+  font-family: sans-serif;
+}
+.slider-container .title{
+    position: absolute;
+    top: 50px;
+    left: 40%;
+    z-index: 3;
+}
+
+.slider {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  position: relative;
+}
+
+.slider li {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  transition: opacity 0.5s ease;
+}
+
+.slider li.active {
+  opacity: 1;
+}
+
+.prev, .next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #2CA89A;
+  border: none;
+  color: #f0f0f0;
+  font-size: 1.5rem;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.prev { left: 10px; }
+.next { right: 10px; }
+
+ul li .konten{
+    width: 50%;
+    height: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #eee;
+}
+
+ul li img{
+    width: 50%;
+    height: 100%;
+    z-index: 2;
+}
+ul li .deskripsi{
+    width: 50%;
+    height: 100%;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ul li .deskripsi .des-name{
+    width: 80%;
+}
+ul li .deskripsi .des-name h3{
+    margin-bottom: 10px;
+    font-weight: 900;
+}
+
+@media screen and (max-width:600px){
+.slider-container{
+  height: 100vh;
+  width: 100%;
+}
+ ul li .konten{
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+ }
+ ul li .konten .deskripsi{
+  order: 2;
+  width: 100%;
+ }
+ ul li .konten img{
+  order: 1;
+  width: 100%;
+ }
+ .slider-container .title{
+    height: 20%;
+    width: 100%;
+    left: 0;
+    top:0;
+}
+.slider {
+  height: 100%;
+}
+.prev, .next{
+  top: 95%;
+  z-index: 100;
+} 
+}
