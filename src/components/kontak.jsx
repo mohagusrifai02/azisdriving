@@ -36,7 +36,7 @@ const Kontak = (()=> {
                     </div>
                     <div className="maps">
                         <iframe 
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15844.580864618563!2d109.19622518350548!3d-6.873198086368489!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6fc7e672a1f36d%3A0x5027a76e3566510!2sKramat%2C%20Tegal%20Regency%2C%20Central%20Java!5e0!3m2!1sen!2sid!4v1754758230279!5m2!1sen!2sid" 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3957.318876788614!2d112.74778907411292!3d-7.318031471957579!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7fb006640b007%3A0x8dc275dfd69d2dd3!2sMitra%20Da&#39;i%20Nusantara%20(MDN)!5e0!3m2!1sen!2sid!4v1758552902290!5m2!1sen!2sid" 
                         width="100%" 
                         height="100%" 
                         style={{ border:0 }} 
