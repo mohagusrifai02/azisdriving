@@ -16,10 +16,6 @@ const Kontak = (()=> {
                                 <FontAwesomeIcon icon={faLocationDot} className="lokasi"/> &nbsp;
                                 <span>Surabaya, Jatim</span>
                             </div>
-                            <div className="fb">
-                                <FontAwesomeIcon icon={faFacebook} style={{color:'#4285F4'}}/> &nbsp;
-                                <span>Abdulazis</span>
-                            </div>
                             <div className="wa">
                                 <FontAwesomeIcon icon={faWhatsapp} style={{color:'#128C7E'}}/> &nbsp;
                                 <span>0823-2509-1045</span>
@@ -27,10 +23,6 @@ const Kontak = (()=> {
                             <div className="yt">
                                 <FontAwesomeIcon icon={faYoutube} color='rgba(255, 0, 0, 0.712)'/> &nbsp;
                                 <span>azis</span>
-                            </div>
-                            <div className="email">
-                                <FontAwesomeIcon icon={faEnvelope} color='rgb(250, 128, 114)'/> &nbsp;
-                                <span>azismuslim@gmail.com</span>
                             </div>
                         </div>
                     </div>
