@@ -18,7 +18,7 @@ const Kontak = (()=> {
                             </div>
                             <div className="wa">
                                 <FontAwesomeIcon icon={faWhatsapp} style={{color:'#128C7E'}}/> &nbsp;
-                                <span>0823-2509-1045</span>
+                                <span>0897-1254-455</span>
                             </div>
                             <div className="yt">
                                 <FontAwesomeIcon icon={faYoutube} color='rgba(255, 0, 0, 0.712)'/> &nbsp;
