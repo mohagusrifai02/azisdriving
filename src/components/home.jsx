@@ -23,7 +23,7 @@ const Home = ()=> {
                             <div className="medsos">
                                
                             </div>
-                            <h1>Azis Driving</h1>
+                            <h1>Azis Driver</h1>
                             <p>Selamat datang pengunjung yang berbahagia</p>
                         </div>
                         <div className="caption-home">
