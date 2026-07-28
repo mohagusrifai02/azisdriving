@@ -26,7 +26,7 @@ const Keunggulan = ()=> {
                                     Lisensi
                                 </h3>
                             </div>
-                            <p>Kami mempunyai sertifikat driver dan sim B, yang dapat menunjang keamanan dan kemnyamanan dalam mengemudi</p>
+                            <p>Kami mempunyai sertifikat driver dan sim A, yang dapat menunjang keamanan dan kemnyamanan dalam mengemudi</p>
                         </li>
                         <li>
                             <div className="ikon">

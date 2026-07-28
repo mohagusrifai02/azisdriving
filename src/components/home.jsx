@@ -28,7 +28,7 @@ const Home = ()=> {
                         </div>
                         <div className="caption-home">
                             <h2>Kami melayani jasa mengemudi baik dalam kota maupun luar kota, silahkan scroll website ini untuk cari tau tentang saya, atau pesan sekarang</h2>
-                            <a href='https://wa.me/6282325091045?text=Halo%20Azis%2C%20saya%20ingin%20pesan%20jasa%20driver' target="_blank" className='tombol-wa' rel="noopener noreferrer">
+                            <a href='https://wa.me/628971254455?text=Halo%20Azis%2C%20saya%20ingin%20pesan%20jasa%20driver' target="_blank" className='tombol-wa' rel="noopener noreferrer">
                                 <i class="fa-brands fa-whatsapp"></i>&nbsp;
                                 <span>Order</span>
                             </a>
