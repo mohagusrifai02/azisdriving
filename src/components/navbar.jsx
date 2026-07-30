@@ -17,7 +17,7 @@ const Navbar = ()=>{
         <>
             <nav>
                 <div className="judul">
-                    <h4>Azis Driving</h4>
+                    <h4>Aziz Driver</h4>
                     <button className="i" onClick={openMenu}>
                         <FontAwesomeIcon icon={isOpen ? faTimes : faBars} />
                     </button>

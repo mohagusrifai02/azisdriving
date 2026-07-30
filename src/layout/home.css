@@ -1,133 +1,181 @@
-.container_home{
-    background-image: url('../assets/surabaya.jpg');
+.container_home {
+    min-height: 100vh;
+    padding: 112px 24px 64px;
+    background:
+        linear-gradient(135deg, rgba(15, 23, 42, 0.88), rgba(44, 168, 154, 0.86)),
+        url('../assets/surabaya.jpg');
     background-position: center;
     background-size: cover;
-    position: relative;
-}
-.overlay{
-    width: 100%;
-    height: 100vh;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 1;
-    opacity: 0.9;
-    background-color: rgba(255, 255, 255, 0.87);
-}
-.cards {
     display: flex;
-    justify-content: space-between;
     align-items: center;
+}
+
+.overlay {
+    display: none;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    align-items: center;
+    gap: 40px;
     width: 100%;
-    height: 100vh;
+    max-width: 1200px;
+    margin: 0 auto;
     position: relative;
     z-index: 2;
 }
-.cards .img{
-    width: 50%;
-    height: 70%;
-}
-.cards .img img{
-    width: 70%;
-    height: 100%;
-}
-.cards .card{
-    width: 50%;
-    height: 100%;
+
+.cards .img {
+    width: 100%;
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
     justify-content: center;
-    position: relative;
-}
-.cards .card svg{
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 1;
-    width: 100%;
-    height: 100%;
-    opacity: 0.3;
-}
-.cards .card .title-home{
-    flex-basis: 10%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    width: 100%;
-}
-.cards .card .title-home .medsos{
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    height: 20px;
-    width: 100%;
-}
-.cards .card .title-home .medsos .ikon{
-    flex-basis: 20%;
-    display: flex;
-    align-items: center;
-}
-.cards .card .title-home .medsos .ikon .fa-envelope{
-    color: #D93025;
-}
-.cards .card .title-home .medsos .ikon .fa-instagram{
-    color: #833AB4;
-}
-.cards .card .caption-home{
-    flex-basis: 30%;
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-start;
-    flex-direction: column;
-    width: 70%;
-    gap: 10px;
-}
-.cards .card .caption-home .tombol-wa{
-    background-color:#2CA89A;
-    color: #f0f0f0;
-    padding: 10px;
-    border-radius: 5px;
-    position: relative;
-    z-index: 3;
 }
 
-@media screen and (max-width:600px){
-    .cards{
-        flex-direction: column;
+.cards .img .image-card {
+    padding: 12px;
+    border-radius: 28px;
+    background: rgba(255, 255, 255, 0.16);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 20px 50px rgba(15, 23, 42, 0.25);
+}
+
+.cards .img img {
+    width: min(100%, 480px);
+    height: auto;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+.cards .card {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 18px;
+    padding: 32px;
+    border-radius: 28px;
+    background: rgba(255, 255, 255, 0.96);
+    box-shadow: 0 20px 60px rgba(15, 23, 42, 0.2);
+}
+
+.cards .card .eyebrow {
+    display: inline-flex;
+    align-items: center;
+    padding: 8px 12px;
+    border-radius: 999px;
+    background: rgba(44, 168, 154, 0.12);
+    color: #0f766e;
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+}
+
+.cards .card .title-home {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.cards .card .title-home h1 {
+    font-size: clamp(2rem, 3.2vw, 3rem);
+    color: #0f172a;
+    margin: 0;
+}
+
+.cards .card .title-home p {
+    color: #475569;
+    font-size: 1rem;
+    margin: 0;
+}
+
+.cards .card .caption-home {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.cards .card .caption-home .highlights {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.cards .card .caption-home .highlights span {
+    padding: 6px 10px;
+    border-radius: 999px;
+    background: #e2f8f5;
+    color: #0f766e;
+    font-size: 0.82rem;
+    font-weight: 700;
+}
+
+.cards .card .caption-home h2 {
+    margin: 0;
+    font-size: 1.05rem;
+    line-height: 1.7;
+    color: #334155;
+    font-weight: 500;
+}
+
+.cards .card .caption-home .actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 6px;
+}
+
+.cards .card .caption-home .tombol-wa,
+.cards .card .caption-home .tombol-secondary {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 18px;
+    border-radius: 999px;
+    font-weight: 700;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.cards .card .caption-home .tombol-wa {
+    background: linear-gradient(135deg, #0f766e, #2ca89a);
+    color: #f8fafc;
+    box-shadow: 0 10px 20px rgba(15, 118, 110, 0.2);
+}
+
+.cards .card .caption-home .tombol-secondary {
+    background: #f8fafc;
+    color: #0f172a;
+    border: 1px solid #cbd5e1;
+}
+
+.cards .card .caption-home .tombol-wa:hover,
+.cards .card .caption-home .tombol-secondary:hover {
+    transform: translateY(-2px);
+}
+
+@media screen and (max-width: 768px) {
+    .container_home {
+        padding: 100px 16px 40px;
     }
-    .cards .card{
-        width: 100%;
-        height: 50%;
+
+    .cards {
+        grid-template-columns: 1fr;
+        gap: 24px;
     }
-    .cards .img{
-        width: 100%;
-        height: 50%;
-        margin-top:40px ;
+
+    .cards .img {
+        order: 2;
     }
-    .cards .img img{
-        height: 100%;
-        width: 100%;
+
+    .cards .card {
+        padding: 24px;
     }
-    .cards .card{
-        margin-top: 10px;
-    }
-    .cards .card .title-home p, .cards .card .title-home h1{
-        text-align: center;
-        width: 100%;
-    }
-    .cards .card .title-home .medsos{
-        width: 100%;
-        margin: auto;
-        justify-content: center;
-        gap: 10px;
-    }
-    .cards .card .caption-home{
-        width: 100%;
-        text-align: center;
-    }
-    .cards .card .caption-home .tombol-wa{
-        margin: auto;
+
+    .cards .card .title-home,
+    .cards .card .caption-home {
+        align-items: flex-start;
     }
 }

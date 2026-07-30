@@ -1,4 +1,3 @@
-import Ojek from '../assets/ojekonline.png'
 import '../layout/home.css'
 import Layanan from './layanan'
 import Keunggulan from './keunggulan'
@@ -6,32 +5,36 @@ import Testimoni from './testimoni'
 import Kontak from './kontak'
 import Driving from '../assets/driving.png'
 
-const Home = ()=> {
+const Home = () => {
     return (
         <>
             <div className="container_home">
-                <div className="overlay"></div>
                 <div className="cards">
                     <div className="img">
-                        <img src={Driving} alt="" />
+                        <div className="image-card">
+                            <img src={Driving} alt="Driver professional" />
+                        </div>
                     </div>
                     <div className="card">
-                        <svg viewBox="0 0 100 100" preserveAspectRatio="none">
-                            <path d="M0,100 Q50,90 100,0 L100,100 Z" fill="#2CA89A" />
-                        </svg>
+                        <div className="eyebrow">Layanan driver profesional</div>
                         <div className="title-home">
-                            <div className="medsos">
-                               
-                            </div>
-                            <h1>Azis Driver</h1>
-                            <p>Selamat datang pengunjung yang berbahagia</p>
+                            <h1>Aziz Driver</h1>
+                            <p>Solusi perjalanan aman, nyaman, dan terpercaya untuk kebutuhan dalam kota maupun luar kota.</p>
                         </div>
                         <div className="caption-home">
-                            <h2>Kami melayani jasa mengemudi baik dalam kota maupun luar kota, silahkan scroll website ini untuk cari tau tentang saya, atau pesan sekarang</h2>
-                            <a href='https://wa.me/628971254455?text=Halo%20Azis%2C%20saya%20ingin%20pesan%20jasa%20driver' target="_blank" className='tombol-wa' rel="noopener noreferrer">
-                                <i class="fa-brands fa-whatsapp"></i>&nbsp;
-                                <span>Order</span>
-                            </a>
+                            <div className="highlights">
+                                <span>24/7</span>
+                                <span>Berpengalaman</span>
+                                <span>Harga Transparan</span>
+                            </div>
+                            <h2>Siap mengantar Anda dengan sopan, tepat waktu, dan fokus pada kenyamanan perjalanan setiap hari.</h2>
+                            <div className="actions">
+                                <a href='https://wa.me/628971254455?text=Halo%20Azis%2C%20saya%20ingin%20pesan%20jasa%20driver' target="_blank" className='tombol-wa' rel="noopener noreferrer">
+                                    <i className="fa-brands fa-whatsapp"></i>&nbsp;
+                                    <span>Pesan Sekarang</span>
+                                </a>
+                                <a href="#layanan" className='tombol-secondary'>Lihat Layanan</a>
+                            </div>
                         </div>
                     </div>
                 </div>
